@@ -1,0 +1,188 @@
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* General Container Styling */
+.container {
+  padding: 40px; /* Increased padding for better spacing */
+  max-width: 700px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95); /* Glass effect */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Floating card effect */
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.dark-mode .container {
+  background: rgba(0, 0, 0, 0.7); 
+  color: #f5f5f5;
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Subtle hover lift */
+}
+
+/* Center the title */
+header h1 {
+  text-align: center;
+}
+
+/* Centering all buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Button Styling */
+button {
+  padding: 12px 30px;
+  margin: 10px;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Small lift effect */
+}
+
+.dark-mode button {
+  background-color: #1a73e8;
+}
+
+/* Input and Select Styling */
+input, select {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Result Box Styling */
+.result-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .result-box {
+  background-color: rgba(50, 50, 50, 0.8);
+  color: white;
+}
+
+/* Navbar Styling */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 10px 0;
+  font-size: 1.2rem; /* Slightly larger font size for modern look */
+}
+
+nav a {
+  color: #333;
+  font-weight: 600; /* Bolder text for better readability */
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 5px;
+}
+
+nav a:hover {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+.dark-mode nav a {
+  color: #f5f5f5;
+}
+
+.dark-mode nav a:hover {
+  color: #1a73e8;
+  border-bottom: 2px solid #1a73e8;
+}
+
+/* Root Container Styling */
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: url('https://wallpapercave.com/wp/wp2699919.jpg') no-repeat center center/cover;
+  backdrop-filter: blur(8px); /* Adds blur behind the container */
+}
+
+.dark-mode #root {
+  background: url('https://rare-gallery.com/uploads/posts/890306-Money-Banknotes-Dollars-Gray-background.jpg') no-repeat center center/cover;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .result-box {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f1f1f1;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  border-top: 3px solid #007bff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode footer {
+  background-color: #1e1e1e;
+  border-top: 3px solid #1a73e8;
+  color: #f1f1f1;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
